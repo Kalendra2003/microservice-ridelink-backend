@@ -28,12 +28,12 @@ Secrets are never committed. Set them as environment variables (see `.env.exampl
 ## Run (from the `driver-vehicle-service` folder)
 Windows PowerShell:
 ```
-$env:JWT_SECRET="ridelink-demo-secret-0123456789-abcdef"
+$env:JWT_SECRET="<your-secret-of-at-least-32-characters>"
 .\mvnw.cmd spring-boot:run
 ```
 Linux / macOS:
 ```
-export JWT_SECRET="ridelink-demo-secret-0123456789-abcdef"
+export JWT_SECRET="<your-secret-of-at-least-32-characters>"
 ./mvnw spring-boot:run
 ```
 Swagger UI: http://localhost:8082/swagger-ui.html · OpenAPI JSON: http://localhost:8082/v3/api-docs
